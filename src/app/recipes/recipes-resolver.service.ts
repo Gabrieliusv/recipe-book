@@ -6,13 +6,13 @@ import {
 import { Injectable } from '@angular/core';
 
 import { Recipe } from './recipe.model';
-import { DataStorageSrevice } from '../shared/data-storage.service';
+import { DataStorageService } from '../shared/data-storage.service';
 import { RecipeService } from './recipe.service';
 
 @Injectable({ providedIn: 'root' })
 export class RecipesResolverService implements Resolve<Recipe[]> {
   constructor(
-    private dataStorageService: DataStorageSrevice,
+    private dataStorageService: DataStorageService,
     private recipeService: RecipeService
   ) {}
 
